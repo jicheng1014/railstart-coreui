@@ -7,10 +7,9 @@ require 'capybara/rails'
 require 'pundit/rspec'
 require 'ffaker'
 require 'sidekiq/testing'
-require "clearance/rspec"
 require 'database_cleaner'
-require 'wisper/rspec/stub_wisper_publisher'
-require 'spec_init_data'
+# require 'wisper/rspec/stub_wisper_publisher'
+
 Sidekiq::Testing.inline!
 
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -18,15 +17,15 @@ Sidekiq::Testing.inline!
 # Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 ActiveRecord::Migration.maintain_test_schema!
 
-DatabaseCleaner.strategy = :truncation, { except: %w[member_levels account_ban_levels] }
+DatabaseCleaner.strategy = :truncation, { except: %w[] }
 
-SpecInitData.init
+
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   # config.filter_gems_from_backtrace("gem name")
 
   config.before(:suite) do
-    DatabaseCleaner.strategy = :truncation, { except: %w[member_levels account_ban_levels] }
+    DatabaseCleaner.strategy = :truncation, { except: %w[] }
   end
 
   config.around(:each) do |example|

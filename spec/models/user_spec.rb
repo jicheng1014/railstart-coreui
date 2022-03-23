@@ -25,19 +25,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'user role' do
     it 'normal user' do
-      user = FactoryBot.create(:user, role_id: 'user')
-      expect(user.user?).to eq true
+      user = FactoryBot.create(:user)
+      expect(User.count).to eq 1
     end
-
-    it 'admin user' do
-      user = FactoryBot.create(:user, role_id: 'admin')
-      expect(user.admin?).to eq true
-    end
-
-    it 'super_admin user' do
-      user = FactoryBot.create(:user, role_id: 'super_admin')
-      expect(user.super_admin?).to eq true
-    end
-
   end
 end

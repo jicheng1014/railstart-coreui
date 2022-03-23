@@ -1,20 +1,19 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::Mine::AccountsController, type: :controller do
+RSpec.describe HomeController, type: :controller do
 
-  describe "update " do
-     before(:each) do
-      @account = FactoryBot.create(:account)      
-      auth_headers = { 'token' =>  @account.auth_token }
-      request.headers.merge! auth_headers      
+  describe "index " do
+     before(:each) do      
+      auth_headers = { 'token' =>  '' }
+      request.headers.merge! auth_headers
     end
 
-    it 'can update' do
+    it 'index' do
       params = {
-        account: { profile_attributes: { label_list: 'xx'}}
+       
       }
 
-      post :update_info, params: params      
+      get :index, params: params      
     end
   end
 end

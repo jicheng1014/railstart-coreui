@@ -63,6 +63,7 @@ end
 group :development, :test do  
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "ffaker", "~> 2.20"
+  gem 'rspec-rails', '~> 5.0.2'
 end
 
 group :development do

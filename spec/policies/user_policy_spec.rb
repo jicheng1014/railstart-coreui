@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe AccountPolicy do
+describe UserPolicy do
   subject { described_class }
 
   # permissions :update?, :edit? do

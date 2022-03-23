@@ -14,10 +14,10 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 # https://github.com/krisleech/wisper-rspec
-require 'wisper/rspec/matchers'
+# require 'wisper/rspec/matchers'
 
 RSpec.configure do |config|
-  config.include(Wisper::RSpec::BroadcastMatcher)
+  # config.include(Wisper::RSpec::BroadcastMatcher)
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

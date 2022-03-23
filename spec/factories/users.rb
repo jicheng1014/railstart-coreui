@@ -21,13 +21,8 @@
 #
 
 FactoryBot.define do
-  factory :user do
-    username { "zhangsan" }
-    phone { "1861230000"}
-    email {FFaker::Internet.email}
-    position {}
-    password { '1234567' }
-    status {'online'}
-    role_id { 'admin' }
+  factory :user do   
+    email {FFaker::Internet.email}   
+    password { '1234567' }   
   end
 end
