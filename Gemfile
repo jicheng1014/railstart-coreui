@@ -12,7 +12,7 @@ gem "pg", "~> 1.2"
 gem "pghero", "~> 2.8"
 
 # front tools
-gem "importmap-rails"
+# gem "importmap-rails"
 gem "sprockets-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
@@ -20,6 +20,7 @@ gem "sassc-rails"
 gem "chartkick"
 gem 'simple_form'
 gem 'slim'
+gem 'vite_rails'
 
 # backend jobs
 gem "sidekiq", "~> 6.3"

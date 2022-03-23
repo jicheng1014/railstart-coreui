@@ -1,0 +1,16 @@
+{
+  "name": "railstart-coreui",
+  "private": true,
+  "scripts": {
+    "vite": "bin/vite dev"
+  },
+  "devDependencies": {
+    "vite": "^2.9.0-beta.6",
+    "vite-plugin-ruby": "^3.0.8"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo-rails": "^7.1.1",
+    "stimulus-vite-helpers": "^3.0.0"
+  }
+}
