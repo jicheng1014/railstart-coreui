@@ -2,11 +2,15 @@
   "name": "railstart-coreui",
   "private": true,
   "scripts": {
-    "vite": "bin/vite dev"
+    "vite": "bin/vite dev",
+    "vite:build": "bin/vite build"
   },
   "devDependencies": {
     "vite": "^2.9.0-beta.6",
-    "vite-plugin-ruby": "^3.0.8"
+    "vite-plugin-environment": "^1.1.0",
+    "vite-plugin-full-reload": "^1.0.0",
+    "vite-plugin-ruby": "^3.0.8",
+    "vite-plugin-stimulus-hmr": "^3.0.0"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",

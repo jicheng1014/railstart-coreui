@@ -1,5 +1,7 @@
 import * as Turbo from '@hotwired/turbo'
-import "../controllers"
+import "@src/controllers"
+
+// import "@src/stylesheets/index"
 
 const channels = import.meta.globEager('./**/*_channel.js')
 
