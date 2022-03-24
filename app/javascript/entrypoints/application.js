@@ -1,5 +1,10 @@
 import * as Turbo from '@hotwired/turbo'
 import "@src/controllers"
+// import '@coreui/coreui/dist/css/coreui.min.css';
+// import coreui from '@coreui/coreui'
+import '@coreui/coreui/dist/css/coreui.min.css'
+
+import { Toast } from '@coreui/coreui'
 
 // import "@src/stylesheets/index"
 
