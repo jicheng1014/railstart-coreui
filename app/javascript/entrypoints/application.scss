@@ -1,9 +1,9 @@
 @import "custom";
 @import '@coreui/icons';
+@import 'simplebar/dist/simplebar.min.css';
 /*@import "~@coreui/coreui/scss/coreui";*/
-
-body {
-  font-size: 30px;
+html:not([dir=rtl]) .wrapper {
+    padding-left: var(--cui-sidebar-occupy-start, 0);
 }
 
 /* stylelint-disable declaration-no-important, scss/selector-no-redundant-nesting-selector */
@@ -80,3 +80,6 @@ body {
 }
 
 /*# sourceMappingURL=examples.css.map */
+
+
+.simplebar-content{display:flex;flex-direction:column;min-height:100%}
