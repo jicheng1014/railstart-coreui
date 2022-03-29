@@ -1,0 +1,20 @@
+<header class="header header-sticky mb-4">
+  <div class="container-fluid" data-controller="sidebar">
+    <button class="header-toggler px-md-0 me-md-3" type="button" data-action="click->sidebar#toggle">
+      <i class="icon icon-lg cil-menu">
+      </i>
+    </button>
+    <a class="header-brand d-md-none" href="#">
+      <svg width="118" height="46" alt="CoreUI Logo">
+        <use xlink:href="/assets/brand/coreui.svg#full"></use>
+      </svg></a>
+    <ul class="header-nav d-none d-md-flex">
+      <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+    </ul>
+    <%= render "admin/common/account_header" %>
+  </div>
+  <div class="header-divider"></div>
+  <%= render "admin/common/breadcrumb" %>
+</header>

@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%#= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%#= javascript_importmap_tags %>
     <%= vite_client_tag %>
     <%= vite_javascript_tag 'application' %>
     <%= vite_stylesheet_tag 'application.scss' %>
-
-    <%# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/coreui@4.1.1/dist/css/coreui.rtl.min.css" integrity="sha384-kRqiDCdnsi8m3CXIbgsUtVj/6Wjh66JnA4yrBFVCx1ILbUvYIyGOVyZ8gLjlT7pR" crossorigin="anonymous"> %>
-
-
   </head>
 
   <body>
-    <%= yield %>
+  <%= render "admin/common/sidebar" %>
+  <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <%= render 'admin/common/header' %>
+      <div class="body flex-grow-1 px-3">
+        <%= yield %>
+      </div>
+      <%= render "admin/common/footer" %>
+    </div>
+
+
   </body>
 </html>

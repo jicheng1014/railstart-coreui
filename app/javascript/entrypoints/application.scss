@@ -1,7 +1,8 @@
 @import "custom";
 @import '@coreui/icons';
 @import 'simplebar/dist/simplebar.min.css';
-/*@import "~@coreui/coreui/scss/coreui";*/
+@import '@coreui/coreui/dist/css/coreui.min.css';
+
 html:not([dir=rtl]) .wrapper {
     padding-left: var(--cui-sidebar-occupy-start, 0);
 }
