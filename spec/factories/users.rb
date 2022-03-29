@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
@@ -21,8 +23,8 @@
 #
 
 FactoryBot.define do
-  factory :user do   
-    email {FFaker::Internet.email}   
-    password { '1234567' }   
+  factory :user do
+    email { FFaker::Internet.email }
+    password { '1234567' }
   end
 end

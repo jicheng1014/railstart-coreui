@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe UserPolicy do
@@ -28,5 +30,4 @@ describe UserPolicy do
   #     expect(subject).to permit(super_user, user)
   #   end
   # end
-
 end

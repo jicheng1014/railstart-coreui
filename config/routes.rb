@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users
-  root "home#index"
+  root 'home#index'
 
   namespace :admin do
-    root "components#dashboard"
+    root 'components#dashboard'
     resource :users
 
     resource :components do
@@ -32,7 +34,6 @@ Rails.application.routes.draw do
       get :base_spinners
       get :base_tables
       get :base_tooltips
-
 
       get :button_buttons
       get :button_button_group

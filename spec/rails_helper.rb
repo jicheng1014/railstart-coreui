@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../../config/environment', __FILE__)
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+require File.expand_path('../config/environment', __dir__)
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 require 'capybara/rails'
 require 'pundit/rspec'
@@ -19,7 +21,6 @@ ActiveRecord::Migration.maintain_test_schema!
 
 DatabaseCleaner.strategy = :truncation, { except: %w[] }
 
-
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   # config.filter_gems_from_backtrace("gem name")
@@ -29,7 +30,7 @@ RSpec.configure do |config|
   end
 
   config.around(:each) do |example|
-    DatabaseCleaner.cleaning do      
+    DatabaseCleaner.cleaning do
       example.run
     end
   end
@@ -38,6 +39,5 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 end
 
-
 # SWAGGER_DRY_RUN=0 rails rswag:specs:swaggerize
-# 
+#

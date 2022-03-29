@@ -5,15 +5,13 @@ class UserPolicy < ApplicationPolicy
     true
   end
 
-  def create?
-  end
+  def create?; end
 
   def update?
     true
   end
 
-  def destroy?
-  end
+  def destroy?; end
 
   class Scope < ApplicationPolicy::Scope
     def resolve

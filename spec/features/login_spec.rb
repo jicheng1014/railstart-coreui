@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe '登录功能', type: :feature do
@@ -22,8 +24,6 @@ describe '登录功能', type: :feature do
   #   expect(page).to have_current_path(root_path)
   # end
 
-
-
   # it '密码错误的失败登录' do
   #   within('.simple_form.session') do
   #     fill_in 'session[email]', with: user.email
@@ -33,5 +33,4 @@ describe '登录功能', type: :feature do
   #   expect(page).to have_content '邮箱或密码输入不正确'
   #   expect(page).to have_current_path(session_path)
   # end
-
 end
