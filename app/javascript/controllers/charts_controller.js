@@ -4,9 +4,6 @@ import Utils  from "@coreui/utils";
 
 export default class extends Controller {
   connect() {
-    setTimeout(() => {
-      this.init();
-    }, 1000);
   }
 
 }

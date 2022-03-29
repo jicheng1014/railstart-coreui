@@ -68,7 +68,7 @@ end
 
 group :development do
   gem "web-console"
-  gem "rack-mini-profiler"  
+  # gem "rack-mini-profiler"  
   gem "spring"
 end
 
