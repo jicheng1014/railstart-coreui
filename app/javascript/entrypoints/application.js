@@ -4,6 +4,9 @@ import "@src/controllers"
 // import coreui from '@coreui/coreui'
 import '@coreui/coreui/dist/css/coreui.min.css'
 
+import 'simplebar';
+import 'simplebar/dist/simplebar.css';
+
 import { Toast } from '@coreui/coreui'
 
 // import "@src/stylesheets/index"

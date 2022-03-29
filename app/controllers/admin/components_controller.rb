@@ -1,4 +1,4 @@
-class Admin::ComponentsController < ActionController::Base
+class Admin::ComponentsController < Admin::BaseController
 
   def base
   end
