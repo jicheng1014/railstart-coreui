@@ -76,7 +76,7 @@ Devise.setup do |config|
   # It can be set to an array that will enable params authentication only for the
   # given strategies, for example, `config.params_authenticatable = [:database]` will
   # enable it only for database (email + password) authentication.
-  # config.params_authenticatable = true
+  config.params_authenticatable = true
 
   # Tell if authentication through HTTP Auth is enabled. False by default.
   # It can be set to an array that will enable http authentication only for the
@@ -324,8 +324,8 @@ end
 # https://github.com/heartcombo/devise/wiki/How-To%3A-Create-custom-layouts
 Rails.application.config.to_prepare do
   Devise::SessionsController.layout "login"
-  # Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise" }
-  # Devise::ConfirmationsController.layout "devise"
-  # Devise::UnlocksController.layout "devise"
-  # Devise::PasswordsController.layout "devise"
+  Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "login" }
+  Devise::ConfirmationsController.layout "login"
+  Devise::UnlocksController.layout "login"
+  Devise::PasswordsController.layout "login"
 end

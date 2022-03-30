@@ -2,19 +2,23 @@
 
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    sessions: 'users/sessions',
+    registrations: 'users/registrations',
+    confirmations: 'users/confirmations',
+    passwords: 'users/passwords',
+    omniauth_callbacks: 'users/omniauth_callbacks'
   }
   root 'home#index'
 
   namespace :admin do
     root 'components#dashboard'
-    resource :users
+    resources :users
 
     resource :components do
       get :pages
-      get :dashboard          
+      get :dashboard
       get :typography
-      get :charts      
+      get :charts
       get :colors
       get :widgets
       get :base_toast

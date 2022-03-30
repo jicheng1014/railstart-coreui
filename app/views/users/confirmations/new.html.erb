@@ -1,20 +1,47 @@
-<h2>Resend confirmation instructions</h2>
+<div class="bg-light min-vh-100 d-flex flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mb-4 mx-4">
+          <div class="card-body p-4">
+            <h3>Resend confirmation instructions</h3>
 
-<%= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
-  <%= f.full_error :confirmation_token %>
+            <%= form_for resource, as: resource_name, url: confirmation_path(resource_name), method: :post do |f| %>
+              <%= render "users/shared/error_messages", resource: resource %>
+              <div class="input-group mb-3"><span class="input-group-text">
+                  <svg class="icon">
+                    <use xlink:href="/coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                  </svg></span>
+                <%= f.email_field :email,
+                              required: true,
+                              autofocus: true,
+                              placeholder: 'Email',
+                              class: 'form-control',
+                              value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
+                              %>
+              </div>
 
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email),
-                input_html: { autocomplete: "email" } %>
+              <button class="btn btn-block btn-success" type="submit">
+                <span class="text-white">Resend confirmation instructions</span>
+              </button>
+
+              <div class="float-end">
+              <%- if controller_name != 'sessions' %>
+                <%= link_to "Log in", new_session_path(resource_name), class: 'btn btn-outline-primary float-end' %><br />
+              <% end %>
+              <%- if devise_mapping.omniauthable? %>
+                <%- resource_class.omniauth_providers.each do |provider| %>
+                  <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post, class: 'float-end mt-1' %><br />
+                <% end %>
+              <% end %>
+            </div>
+            <% end %>
+            <%#= render "users/shared/links" %>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Resend confirmation instructions" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
