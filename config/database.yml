@@ -23,3 +23,23 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode   
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+# development:
+#   <<: *default
+#   database: railstart_development
+
+# test:
+#   <<: *default
+#   database: railstart_test
+
+# production:
+#   <<: *default
+#   database: railstart_production
+#   username: <%= ENV["DATABASE_USERNAME"] %>
+#   password: <%= ENV['DATABASE_PASSWORD'] %>
+#   pool: <%= ENV['DATABASE_POOL'] || 50 %>

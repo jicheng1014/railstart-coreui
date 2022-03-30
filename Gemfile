@@ -55,6 +55,7 @@ gem 'pagy'
 gem 'pundit'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'meta_tags'
+gem "image_processing", "~> 1.2"
 
 # monitor
 gem 'sentry-rails'
