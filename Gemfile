@@ -35,6 +35,7 @@ gem 'sidekiq-failures'
 # user center
 gem 'devise', '~> 4.8'
 gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
 
 # api
 gem 'oj'
