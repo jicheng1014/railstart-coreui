@@ -8,10 +8,12 @@
     <%= vite_client_tag %>
     <%= vite_javascript_tag 'application' %>
     <%= vite_stylesheet_tag 'application.scss' %>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.1.1/dist/js/coreui.bundle.min.js" integrity="sha384-PXOm0LjM7kBY7at2HNqu2pAJsTVQUPRzpJSwQD0V//zsjFAcv61qjiZj3ELesLb1" crossorigin="anonymous"></script> -->
+
   </head>
 
   <body>
-  <%= render "admin/common/sidebar" %>
+  <%= render "admin/common/sidebar_wrap" %>
   <div class="wrapper d-flex flex-column min-vh-100 bg-light">
     <%= render 'admin/common/header' %>
       <div class="body flex-grow-1 px-3">

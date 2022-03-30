@@ -4,7 +4,7 @@ import { Sidebar } from "@coreui/coreui";
 export default class extends Controller {
   connect() {
     // const simpleBar = new SimpleBar(document.getElementById("#sidebar"));
-    // console.log('xxx')
+    // this.toggle()
   }
 
   toggle() {

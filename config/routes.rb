@@ -10,15 +10,12 @@ Rails.application.routes.draw do
 
     resource :components do
       get :pages
-      get :dashboard
-
-      get :buttons
-      get :forms
+      get :dashboard          
       get :typography
-      get :chart
-      get :icons
+      get :charts      
       get :colors
       get :widgets
+      get :base_toast
       get :base_accordion
       get :base_breadcrumb
       get :base_cards

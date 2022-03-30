@@ -14,7 +14,7 @@ module Admin
 
     def typography; end
 
-    def chart; end
+    def charts; end
 
     def icons; end
 
@@ -80,6 +80,10 @@ module Admin
 
     def base_tooltips
       render 'admin/components/base/tooltips'
+    end
+
+    def base_toast
+      render 'admin/components/base/toast'
     end
 
     def button_buttons
