@@ -3,12 +3,12 @@ import { resolve } from 'path'
 import StimulusHMR from 'vite-plugin-stimulus-hmr'
 import EnvironmentPlugin from 'vite-plugin-environment'
 import FullReload from 'vite-plugin-full-reload'
-import RubyPlugin from 'vite-plugin-ruby'
+import ViteRuby from 'vite-plugin-ruby'
 
 export default defineConfig({
-  plugins: [
-    RubyPlugin(),
+  plugins: [    
     StimulusHMR(),
+    ViteRuby(),
     // FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 500 })
     // EnvironmentPlugin(['API_KEY', 'DEBUG'])
   ],
