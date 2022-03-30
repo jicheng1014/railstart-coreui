@@ -14,6 +14,7 @@ gem 'pg', '~> 1.2'
 gem 'pghero', '~> 2.8'
 gem 'puma', '~> 5.0'
 gem 'redis', '~> 4.0'
+gem 'redis-namespace'
 gem 'sqlite3', '~> 1.4'
 
 # front tools
