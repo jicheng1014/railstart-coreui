@@ -1,12 +1,11 @@
 # frozen_string_literal: true
+source 'https://gems.ruby-china.com'
+
 if ENV['ORIGIN']
   source 'https://rubygems.org'
 end
-source 'https://gems.ruby-china.com'
-
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
 
 # db and server
@@ -25,7 +24,7 @@ gem 'simple_form'
 gem 'slim'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
-gem 'turbo-rails'
+gem 'turbo-rails', '~> 1.0.1'
 gem 'vite_rails'
 
 # backend jobs
@@ -65,9 +64,6 @@ gem 'sentry-sidekiq'
 group :production do
   gem 'newrelic_rpm'
 end
-
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]

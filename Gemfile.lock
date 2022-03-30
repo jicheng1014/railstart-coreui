@@ -363,8 +363,9 @@ GEM
     tilt (2.0.10)
     timeout (0.2.0)
     truncate_html (0.9.3)
-    turbo-rails (7.1.1)
-      rails (>= 6.0.0)
+    turbo-rails (1.0.1)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     vite_rails (3.0.7)
@@ -393,6 +394,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  ruby
   x86_64-darwin-20
 
 DEPENDENCIES
@@ -443,11 +445,11 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails (~> 1.0.1)
   tzinfo-data
   vite_rails
   web-console
   webmock
 
 BUNDLED WITH
-   2.2.24
+   2.2.33
