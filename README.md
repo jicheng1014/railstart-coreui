@@ -1,10 +1,12 @@
-## railstart-coreui
+railstart-coreui
+------
 
 Backend admin dashboard management system based on [Bootstrap 5](https://getbootstrap.com/) and [Coreui](https://coreui.io/) and [Rails 7](https://rubyonrails.org/)
 
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/tianlu1677/railstart-coreui/blob/master/LICENSE)
 
 Preview: http://localhost:4000/admin
+![image](https://user-images.githubusercontent.com/2594920/160802538-7ba6dcdb-e644-4331-b2a6-83a22dc48949.png)
 
 
 [Coreui](https://coreui.io/) is open source template based on [Bootstrap 5](https://getbootstrap.com/), you can download it from network, I integrate it with Rails 7.
