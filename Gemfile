@@ -48,13 +48,13 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false
 gem 'dotenv-rails', '~> 2.7'
 gem 'enumerize', '~> 2.4.0'
-gem 'figaro'
 gem 'groupdate', '~> 6.0'
 gem 'jbuilder'
 gem 'meta-tags', '~> 2.16'
 gem 'pagy'
 gem 'pundit'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'meta_tags'
 
 # monitor
 gem 'sentry-rails'
