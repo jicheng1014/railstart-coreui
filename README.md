@@ -54,7 +54,6 @@ Please make sure that Redis and PostgreSQL server is running.
 - [awesome_print](https://github.com/awesome-print/awesome_print)
 - [groupdate](https://github.com/ankane/groupdate)
 - [pghero](https://github.com/ankane/pghero)
-- [whenever](https://github.com/javan/whenever)
 - [devise](https://github.com/heartcombo/devise)
 - [dotenv-rails](https://github.com/bkeepers/dotenv)
 - [image_processing](https://github.com/janko/image_processing)
@@ -64,6 +63,10 @@ Please make sure that Redis and PostgreSQL server is running.
 - [stimulus-rails](https://github.com/hotwired/stimulus-rails)
 - [jbuilder](https://github.com/rails/jbuilder)
 - [vite_ruby](https://github.com/ElMassimo/vite_ruby)
+- [pagy](#)
+- [sidekiq](#)
+- [sidekiq-scheduler](#)
+
 
 ### Installation
 
