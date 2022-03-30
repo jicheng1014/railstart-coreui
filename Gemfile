@@ -29,7 +29,7 @@ gem 'vite_rails'
 
 # backend jobs
 gem 'sidekiq', '~> 6.3'
-gem 'sidekiq-cron', '~> 1.2.0'
+gem 'sidekiq-scheduler'
 gem 'sidekiq-failures'
 
 # user center

@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'sidekiq/web'
+require 'sidekiq-scheduler/web'
+
 Rails.application.routes.draw do
   devise_for :users, controllers: {
     sessions: 'users/sessions',
@@ -8,6 +11,14 @@ Rails.application.routes.draw do
     passwords: 'users/passwords',
     omniauth_callbacks: 'users/omniauth_callbacks'
   }
+
+
+  # for sidekiq
+  
+  authenticate :user, ->(user) { user.present? } do
+    mount Sidekiq::Web => '/admin/sidekiq'
+  end
+
   root 'home#index'
 
   namespace :admin do

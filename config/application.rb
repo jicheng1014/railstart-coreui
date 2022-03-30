@@ -42,5 +42,8 @@ module RailstartCoreui
                        request_specs: false
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
     end
+
+    # sidekiq
+    config.active_job.queue_adapter = :sidekiq
   end
 end

@@ -1,0 +1,20 @@
+---
+:concurrency: 5
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 10
+:queues:
+  - high
+  - default
+  - low
+
+
+# https://github.com/moove-it/sidekiq-scheduler
+:schedule:
+  say_hi_job:
+    cron: '* * * * *'   # Runs once per minute
+    class: HiJob
+    queue: low
+    args: 'day'
+    description: 'This job running'
