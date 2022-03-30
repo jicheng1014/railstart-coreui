@@ -41,9 +41,12 @@
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">
           <i class="icon me-2 cil-lock-locked">
-          </i> Lock Account</a><a class="dropdown-item" href="#">
+          </i> Lock Account
+        </a>
+        <%= link_to destroy_user_session_path, class: 'dropdown-item' do %>        
           <i class="icon me-2 cil-account-logout">
-          </i> Logout</a>
+          </i> Logout
+        <% end %>
       </div>
     </li>
   </ul>

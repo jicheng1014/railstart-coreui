@@ -1,6 +1,9 @@
 # frozen_string_literal: true
+if ENV['ORIGIN']
+  source 'https://rubygems.org'
+end
+source 'https://gems.ruby-china.com'
 
-source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -31,6 +34,7 @@ gem 'sidekiq-failures'
 
 # user center
 gem 'devise', '~> 4.8'
+gem 'omniauth-github'
 
 # api
 gem 'oj'
