@@ -1,4 +1,5 @@
 // https://www.chartjs.org/docs/latest/getting-started/integration.html
+// https://echarts.apache.org/examples/zh/editor.html?c=line-smooth
 import { Controller } from "@hotwired/stimulus";
 import Utils  from "@coreui/utils";
 import * as echarts from 'echarts';

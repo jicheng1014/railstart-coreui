@@ -1,0 +1,22 @@
+.row
+  .col-md-12
+    .card
+      .card-header
+        h3
+          = t("action_labels.#{action_name}")
+          = resource_class.model_name.human
+      = simple_form_for [:admin, user], wrapper: :horizontal_form, html: {class: 'form form-bordered'} do |f|
+        .card-body
+          = render "admin/common/error_info", resource: user
+          .row
+            .col-md-12              
+              = f.input :id                
+              = f.input :email
+              = f.submit
+             
+        .card-footer
+          / = index_link(admin_accounts_path)
+          = button_tag data: { disable_with: '提交中...' }, class: 'btn btn-primary' do
+            = "xx"
+            
+      
