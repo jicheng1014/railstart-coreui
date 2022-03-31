@@ -5,6 +5,7 @@ module Admin
 
     def index
       @users = User.all
+      @pagy, @users = pagy(@users)
     end
   end
 end

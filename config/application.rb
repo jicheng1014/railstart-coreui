@@ -26,7 +26,7 @@ module RailstartCoreui
       allow do
         origins '*'
         resource '*', headers: :any, expose: pagination_headers,
-                      methods: %i[get post put delete options]
+                      methods: %i[get post put patch delete options head]
       end
     end
 

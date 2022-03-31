@@ -39,19 +39,20 @@ gem 'omniauth-rails_csrf_protection'
 
 # api
 gem 'oj'
-gem 'rack-attack', '~> 6.4.0'
+gem 'rack-attack', '~> 6.6.0'
 gem 'rack-cors', require: 'rack/cors'
 
 # tools
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false
 gem 'dotenv-rails', '~> 2.7'
-gem 'enumerize', '~> 2.4.0'
+gem 'enumerize', '~> 2.5.0'
 gem 'groupdate', '~> 6.0'
 gem 'jbuilder'
 gem 'meta-tags', '~> 2.16'
-gem 'pagy'
+gem 'pagy', '~> 5.10.1'
 gem 'pundit'
+gem 'ransack'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'meta_tags'
 gem "image_processing", "~> 1.2"
