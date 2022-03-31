@@ -14,6 +14,11 @@ module Admin
     end
 
     def update
+      if @user.save
+        render :edit
+      else
+        render :edit
+      end
     end
 
     def new
@@ -21,7 +26,7 @@ module Admin
 
     private
     def user_params
-      params.require(:user).permit(:email)
+      params.require(:user).permit!
     end
 
     def set_user

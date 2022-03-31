@@ -8,7 +8,7 @@
       = simple_form_for [:admin, @user], wrapper: :horizontal_form, html: {'data-turbo': false, class: 'needs-validation' } do |f|
         .card-body
           = f.error_notification
-          = render "admin/common/error_info", resource: user
+          = render "admin/common/error_info", resource: @user
           .row
             .col-md-12              
               = f.input :id                             
