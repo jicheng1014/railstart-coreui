@@ -1,11 +1,10 @@
 import * as Turbo from '@hotwired/turbo'
 import "@src/controllers"
-// import coreui from '@coreui/coreui'
 import 'simplebar';
-import { Toast, Popover } from '@coreui/coreui'
+// import coreui from '@coreui/coreui'
+import { Toast, Popover, Tab, Dropdown } from '@coreui/coreui'
 
 const channels = import.meta.globEager('./**/*_channel.js')
-
 Turbo.start()
 
 // import ActiveStorage from '@rails/activestorage'
@@ -13,7 +12,7 @@ Turbo.start()
 
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
-console.log('Vite ⚡️ Rails')
+
 
 Array.from(document.querySelectorAll('.toast'))
     .forEach(toastNode => new Toast(toastNode))
@@ -45,3 +44,19 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 //       }, false)
 //     })
 // })();
+// 
+// var triggerTabList = [].slice.call(document.querySelectorAll('#sidebar .nav-group > .nav-link'))
+// triggerTabList.forEach(function (triggerEl) {
+//   var tabTrigger = new Tab(triggerEl)
+
+//   triggerEl.addEventListener('click', function (event) {
+//     event.preventDefault()
+//     tabTrigger.show()
+//   })
+// })
+
+var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+  return new Dropdown(dropdownToggleEl)
+})
+console.log('Vite ⚡️ Rails')
