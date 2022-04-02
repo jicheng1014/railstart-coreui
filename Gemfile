@@ -58,8 +58,8 @@ gem 'meta_tags'
 gem "image_processing", "~> 1.2"
 
 # monitor
-gem 'sentry-rails'
 gem 'sentry-ruby'
+gem 'sentry-rails'
 gem 'sentry-sidekiq'
 
 group :production do
