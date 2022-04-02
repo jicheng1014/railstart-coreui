@@ -16,7 +16,6 @@ module Admin
 
     def auth_user!
       authenticate_user!
-      1/0
     end
   
     private
