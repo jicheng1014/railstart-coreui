@@ -1,6 +1,8 @@
 import * as Turbo from '@hotwired/turbo'
 import "@src/controllers"
 import 'simplebar';
+import 'lightgallery/css/lightgallery.css'
+
 // import coreui from '@coreui/coreui'
 import { Toast, Popover, Tab, Dropdown } from '@coreui/coreui'
 

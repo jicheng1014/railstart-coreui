@@ -173,5 +173,85 @@ module Admin
     def page_500
       render 'admin/components/pages/500'
     end
+
+    def stimulus_animated_number
+      render "admin/components/stimulus/stimulus_animated_number"
+    end
+    def stimulus_notification
+      render "admin/components/stimulus/stimulus_notification"
+    end
+    def stimulus_reveal_controller
+      render "admin/components/stimulus/stimulus_reveal_controller"
+    end
+    def stimulus_carousel
+      render "admin/components/stimulus/stimulus_carousel"
+    end
+    def stimulus_password_visibility
+      render "admin/components/stimulus/stimulus_password_visibility"
+    end
+    def stimulus_scroll_progress
+      render "admin/components/stimulus/stimulus_scroll_progress"
+    end
+    def stimulus_character_counter
+      render "admin/components/stimulus/stimulus_character_counter"
+    end
+    def stimulus_places_autocomplete
+      render "admin/components/stimulus/stimulus_places_autocomplete"
+    end
+    def stimulus_scroll_reveal
+      render "admin/components/stimulus/stimulus_scroll_reveal"
+    end
+    def stimulus_chartjs
+      render "admin/components/stimulus/stimulus_chartjs"
+    end
+    def stimulus_popover
+      render "admin/components/stimulus/stimulus_popover"
+    end
+    def stimulus_scroll_to
+      render "admin/components/stimulus/stimulus_scroll_to"
+    end
+    def stimulus_checkbox_select_all
+      render "admin/components/stimulus/stimulus_checkbox_select_all"
+    end
+    def stimulus_prefetch
+      render "admin/components/stimulus/stimulus_prefetch"
+    end
+    def stimulus_sortable
+      render "admin/components/stimulus/stimulus_sortable"
+    end
+    def stimulus_clipboard
+      render "admin/components/stimulus/stimulus_clipboard"
+    end
+    def stimulus_rails_autosave
+      render "admin/components/stimulus/stimulus_rails_autosave"
+    end
+    def stimulus_textarea_autogrow
+      render "admin/components/stimulus/stimulus_textarea_autogrow"
+    end
+    def stimulus_content_loader
+      render "admin/components/stimulus/stimulus_content_loader"
+    end
+    def stimulus_rails_nested_form
+      render "admin/components/stimulus/stimulus_rails_nested_form"
+    end
+    def stimulus_timeago
+      render "admin/components/stimulus/stimulus_timeago"
+    end
+    def stimulus_dropdown
+      render "admin/components/stimulus/stimulus_dropdown"
+    end
+    def stimulus_read_more
+      render "admin/components/stimulus/stimulus_read_more"
+    end
+    def stimulus_lightbox
+      render "admin/components/stimulus/stimulus_lightbox"
+    end
+    def stimulus_remote_rails
+      render "admin/components/stimulus/stimulus_remote_rails"
+    end
+
+    def load_more
+      render "admin/components/example/load_more", layout: false
+    end
   end
 end

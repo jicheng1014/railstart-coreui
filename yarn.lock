@@ -17,7 +17,7 @@
   resolved "https://registry.npmjs.org/@coreui/utils/-/utils-1.3.1.tgz#ebe6fa00ae7f46d166b26f116e74d55dfc89f5e0"
   integrity sha512-WuWHX7bg89cJH34TWVsLe9RsxzBhTApj+X2Ja19xhjcpxt5Gv11Ozm+fwYt6DD7DgncTvpwYrMcnNlpp701UOg==
 
-"@hotwired/stimulus@^3.0.1":
+"@hotwired/stimulus@^3.0.0", "@hotwired/stimulus@^3.0.1":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@hotwired/stimulus/-/stimulus-3.0.1.tgz#141f15645acaa3b133b7c247cad58ae252ffae85"
   integrity sha512-oHsJhgY2cip+K2ED7vKUNd2P+BEswVhrCYcJ802DSsblJFv7mPFVk3cQKvm2vHgHeDVdnj7oOKrBbzp1u8D+KA==
@@ -39,6 +39,21 @@
   version "3.3.1"
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
   integrity sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw==
+
+"@kanety/stimulus-dropzone@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@kanety/stimulus-dropzone/-/stimulus-dropzone-1.0.4.tgz#05644350c6184e25b3007087d2325b1e2f23b792"
+  integrity sha512-0vvDjVbbhsLzZ804EOEFMnRGT0CYjgkxIDYJdRmd6Njq32kMmiCSxdDhkfFFpeiiZH4mUoENv9VCphkgL1fZCA==
+  dependencies:
+    "@hotwired/stimulus" "^3.0.0"
+    "@kanety/stimulus-static-actions" "^1.0.1"
+
+"@kanety/stimulus-static-actions@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@kanety/stimulus-static-actions/-/stimulus-static-actions-1.0.1.tgz#291235e39d1484da072802c5878a10952e17f344"
+  integrity sha512-8UN3s4CT4b3EhZ5FBtfZLh9k6zTwE4XYn4v4HO+tk/j7WoT77VXaBpQL6L6FHT85koiFpzZiZyJ0YQqxyXkISw==
+  dependencies:
+    "@hotwired/stimulus" "^3.0.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -115,6 +130,11 @@ core-js@^3.0.1:
   version "3.21.1"
   resolved "https://registry.npmjs.org/core-js/-/core-js-3.21.1.tgz#f2e0ddc1fc43da6f904706e8e955bc19d06a0d94"
   integrity sha512-FRq5b/VMrWlrmCzwRrpDYNxyHP9BcAZC+xHJaqTgIE5091ZV1NTmyh0sGOg5XqpnHvR0svdy0sv1gWA1zmhxig==
+
+date-fns@^2.24.0:
+  version "2.28.0"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 debug@^4.3:
   version "4.3.4"
@@ -306,6 +326,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hotkeys-js@>=3:
+  version "3.8.7"
+  resolved "https://registry.npmjs.org/hotkeys-js/-/hotkeys-js-3.8.7.tgz#c16cab978b53d7242f860ca3932e976b92399981"
+  integrity sha512-ckAx3EkUr5XjDwjEHDorHxRO2Kb7z6Z2Sxul4MbBkN8Nho7XDslQsgMJT+CiJ5Z4TgRxxvKHEpuLE3imzqy4Lg==
+
 immutable@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/immutable/-/immutable-4.0.0.tgz#b86f78de6adef3608395efb269a91462797e2c23"
@@ -341,6 +366,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+lightgallery@^2.3.0:
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/lightgallery/-/lightgallery-2.4.0.tgz#b22b355bdbd48d3129e15c9d7d17e8e65bb2a17c"
+  integrity sha512-9i/E/w3yaqs56y3k6SWIUS3JTLpeDCZIVnIuNppzAmj5KjLGy5wrFisoDUD0HdxVUdX0wHG5mjvB4h0TXtyf/w==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -486,6 +516,76 @@ simplebar@^5.3.6:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+stimulus-animated-number@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/stimulus-animated-number/-/stimulus-animated-number-4.0.0.tgz#28fc17cb4ce214bff71ddad3d5d2037b53aa3b68"
+  integrity sha512-CqyOsYGPAGi2sYOiOrMNov1gqLu14BkuybdAkPxt1bUdmUkpZq4rYglzYXS7iCTpMpytA5no6BUArZGQEPIuBg==
+
+stimulus-clipboard@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/stimulus-clipboard/-/stimulus-clipboard-3.0.0.tgz#25bc319eeaa68de683edeeddc5bf58a578cb8142"
+  integrity sha512-OcRfJ8LoXj82Ve/5LKEBSxy8Y1YYmtp1qNRSb0nchk98rPtG8oPlxk8fgmFq/qDUPorM9YHQpc4QFN0ka68Ckg==
+
+stimulus-content-loader@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/stimulus-content-loader/-/stimulus-content-loader-4.0.1.tgz#8e57d519a28c9d74e082633037c0de67fc8640db"
+  integrity sha512-XztvmKLLbOQCgQLXuOagnU3/EA559xpXr2moUWwi2XP5LfDpM6EOFput5w4QVc07TLYCGrKsKe34fgwWSSEKqA==
+
+stimulus-dropdown@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/stimulus-dropdown/-/stimulus-dropdown-2.0.0.tgz#3d401e418be21787f182c0de4bf0d2fd91cfbf8e"
+  integrity sha512-3VUZ4TI9qHvzw+sOEX1oQA8Pw8C/K5yI+oltr5B9DTwFzuJrFZRWR33OK3ERllzZep+quvHZZljIpIRifKCmCg==
+  dependencies:
+    stimulus-use "^0.50.0-2"
+
+stimulus-lightbox@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/stimulus-lightbox/-/stimulus-lightbox-3.0.0.tgz#acd2ae81422f1416e38cd0d1aa54300ac88c72a8"
+  integrity sha512-GDzUDMxSxNvO2UmA/WFLoNLiNl0xcCFt92+SKvL2Zt3uflGIBhQpvdykrTkgiLxCaXxhVW4ba/PwEmliDvcQBg==
+  dependencies:
+    lightgallery "^2.3.0"
+
+stimulus-notification@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/stimulus-notification/-/stimulus-notification-2.0.0.tgz#4c94d5668956030170bee30ed2447883364d8911"
+  integrity sha512-L8vLaLjcK5JURAwvEhUYgQr5GqOXbdFQaopooYXqp87UwmZC+mCXmIm4PD8KNOYw+3xEjgcXvyAXoWXGgYrlHg==
+  dependencies:
+    stimulus-use "^0.50.0-2"
+
+stimulus-prefetch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/stimulus-prefetch/-/stimulus-prefetch-3.0.0.tgz#ae188293945fffa08e5bdb816399222a8d35672e"
+  integrity sha512-ZNMGfGZIOu5fJT3CmbCay+5h1z1LSlLplbVE/sV2SUa9Afb1715Pv4QbcbG4vsin7xVFE6rx0GLjO1nsV2q9SA==
+
+stimulus-rails-nested-form@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/stimulus-rails-nested-form/-/stimulus-rails-nested-form-4.0.0.tgz#cb9295a70081b6e1b9b05250533b1f92a9902d3b"
+  integrity sha512-nE2dM0glgjBvUq/gzORJ+94wITOijoYMZWIrkXSNNH8BpELwH8zg9fuad0X+ZBrhjQrYuNW2R0zLgX69oIzMvw==
+
+stimulus-reveal-controller@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/stimulus-reveal-controller/-/stimulus-reveal-controller-4.0.0.tgz#61579baf536d0015e618be1a54bc6aa6cb0d0e22"
+  integrity sha512-LyzASoA5tl3yid+yzzZ3dF+560dGffma+c6ph+Eq3ylG4gn9SK/SPMbajRrFsPDpiFuAa49K3dlHTW6nMg9aFg==
+
+stimulus-sortable@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/stimulus-sortable/-/stimulus-sortable-3.2.0.tgz#16927f72b22d8e103a0102b2ed52a502d708fff7"
+  integrity sha512-hA1/jggRIOy7UK+BsKRNzfFNguWKo8yD64Oi6Y/n9qELm+G5sE4buuMK8ebAIU01kL5w8jGalPnpKAQkX/q9ZA==
+
+stimulus-timeago@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/stimulus-timeago/-/stimulus-timeago-4.0.0.tgz#f3c49f0d0a4404172bf2a37a106942b045d28bc0"
+  integrity sha512-Smetdkp6mGueuprgX1GwEL0jUYQS+ZvCPm+WKTN2gdTqMN6Q9gZ4yLF49b7/nhUEMlZFSeOvJcdRy+/Mp1SeOA==
+  dependencies:
+    date-fns "^2.24.0"
+
+stimulus-use@^0.50.0-2:
+  version "0.50.0-2"
+  resolved "https://registry.npmjs.org/stimulus-use/-/stimulus-use-0.50.0-2.tgz#7b019fa7618133f42b41bb5d4275fe2e92649819"
+  integrity sha512-vnYifIYeiRe2J0PlQ34mYHdOkLB7HVF55RdDErgOBkgHBAqC05vEIwt3xNuyayuhT5YboVmV0eJCfRN1sxumKg==
+  dependencies:
+    hotkeys-js ">=3"
 
 stimulus-vite-helpers@^3.0.0:
   version "3.0.0"
