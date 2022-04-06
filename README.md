@@ -63,8 +63,8 @@ Please make sure that Redis and PostgreSQL server is running.
 - [jbuilder](https://github.com/rails/jbuilder)
 - [vite_ruby](https://github.com/ElMassimo/vite_ruby)
 - [pagy](#)
-- [sidekiq](#)
 - [sidekiq-scheduler](#)
+- [tailwindcss-rails](#)
 
 
 ### Installation
