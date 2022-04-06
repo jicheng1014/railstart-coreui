@@ -1,0 +1,20 @@
+.col-lg-12
+  .card
+    .card-header
+      i.cil-list-rich
+      = resource_class.model_name.human
+    .card-body
+      table.table.table-bordered.table-striped.table-sm
+        thead
+          tr
+            th
+              | Attr
+            th
+              | Content
+        tbody
+          - attributes.each do |attr|
+            tr
+              th
+                = resource_class.human_attribute_name(attr)
+              th
+                = @user.send(attr)      

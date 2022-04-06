@@ -1,4 +1,4 @@
 
 vite: bin/vite dev
-web: bin/rails s
+web: bin/rails s -p 4000
 css: bin/rails tailwindcss:watch

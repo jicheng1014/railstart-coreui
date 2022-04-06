@@ -5,7 +5,8 @@ module Admin
 
     before_action :set_user, only: [:show, :edit, :update]
     def index
-      @users = User.all
+      @q = User.all.ransack(params[:q])
+      @users = @q.result
       @pagy, @users = pagy(@users)
     end
 

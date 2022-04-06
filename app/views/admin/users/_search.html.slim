@@ -1,0 +1,61 @@
+.search_form.align-items-center
+  = search_form_for [:admin, @q], class: 'row g-2 form-inline' do |f|
+    .col-md-4
+      = f.label :id_in, class: 'col-form-label col-md-2'      
+      = f.search_field :id_in, class: 'form-control', placeholder: 'ID'      
+    .col-md-4
+      = f.label 'Email', class: 'col-form-label col-md-2'      
+      = f.search_field :email_cont, class: 'form-control', placeholder: 'Email'
+      
+    / .input-group.mb-2.mr-sm-2
+      = f.label 'finish'
+      = f.select :is_alive_eq, options_for_select([['是', true], ['否', false]], params.dig(:q, :is_alive_eq)), include_blank: '---全部---', class: 'form-control'        
+    / .input-group.mb-2.mr-sm-2
+      = f.label 'unionid/openid'
+      = f.search_field :unionid_or_openid_cont, class: 'form-control'
+    / .input-group.mb-2.mr-sm-2
+      = f.label '学习课时数'
+      = f.search_field :view_courses_count_gt, value: params[:q]&.dig(:view_courses_count_gt),  class: 'form-control'
+    / .input-group.mb-2.mr-sm-2
+      = f.label '标识'
+      = f.select :source_type_eq, options_for_select(Account.source_type.options, params.dig(:q, :source_type_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'
+    / .input-group.mb-2.mr-sm-2
+      = f.label '来源'
+      = f.select :profile_origin_from_type_eq, options_for_select(Profile.origin_from_type.options, params.dig(:q, :profile_origin_from_type_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'
+    
+    / .input-group.mb-2.mr-sm-2
+      = f.label '圈子'
+      = f.search_field :node_name_cont
+    / .input-group.mb-2.mr-sm-2
+      = f.label 'time'
+      = f.search_field :profile_last_login_at_gteq, placeholder: '开始时间', class: 'datepicker form-control'
+      = f.search_field :profile_last_login_at_lteq, placeholder: '结束时间', class: 'datepicker form-control'  
+    / .input-group.mb-2.mr-sm-2
+      = f.label 'created_at'
+      = f.search_field :created_at_gteq, placeholder: '开始时间', class: 'datepicker form-control'
+      = f.search_field :created_at_lteq, placeholder: '结束时间', class: 'datepicker form-control'
+    / .input-group.mb-2.mr-sm-2
+      = f.label 'Type'
+      = f.select :ban_code_eq, options_for_select(User.all.pluck(:name, :code), params.dig(:q, :ban_code_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2' 
+    / .input-group.mb-2.mr-sm-2
+      = f.label '首次发布倾诉时间'
+      = f.search_field :profile_first_published_topic_at_gteq, placeholder: '开始时间', class: 'datepicker form-control'
+      = f.search_field :profile_first_published_topic_at_lteq, placeholder: '结束时间', class: 'datepicker form-control'  
+    / .input-group.mb-2.mr-sm-2
+      - cates = [['滑板', '滑板'], ['街舞', '街舞'], ['冲浪', '冲浪'], ['滑雪', '滑雪']]
+      = f.label '系统用户的分类'
+      = f.select :profile_system_category_name_eq, options_for_select(cates, params.dig(:q, :profile_system_category_name_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'
+    / .input-group.mb-2.mr-sm-2
+      = f.label '用户认证类型'
+      = f.select :settled_type_eq, options_for_select(Account.settled_type.options, params.dig(:q, :settled_type_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'
+    
+    
+    / .input-group.mb-2.mr-sm-2
+      = f.label '聊天推荐人群'
+      = f.select :profile_recommend_to_chat_eq, options_for_select([['是', true], ['否', false]], params.dig(:q, :profile_recommend_to_chat_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'  
+    / .input-group.mb-2.mr-sm-2
+      = f.label '聊天置顶人群'
+      = f.select :profile_recommend_to_chat_top_eq, options_for_select([['是', true], ['否', false]], params.dig(:q, :profile_recommend_to_chat_top_eq)), include_blank: '---全部---', class: 'form-control mb-2 mr-sm-2'        
+    
+    .input-group.mb-2.mr-sm-2
+      = f.submit 'Search', class: 'btn btn-primary'
