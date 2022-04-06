@@ -26,6 +26,7 @@ gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails', '~> 1.0.1'
 gem 'vite_rails'
+gem 'tailwindcss-rails'
 
 # backend jobs
 gem 'sidekiq', '~> 6.3'
