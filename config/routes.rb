@@ -103,6 +103,7 @@ Rails.application.routes.draw do
       get :stimulus_remote_rails
 
       get :load_more
+      get :popover_card
     end
   end
 end

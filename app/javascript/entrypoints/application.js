@@ -1,6 +1,6 @@
 import * as Turbo from '@hotwired/turbo'
 import "@src/controllers"
-// import 'simplebar';
+import 'simplebar';
 import 'lightgallery/css/lightgallery.css'
 
 // import coreui from '@coreui/coreui'
@@ -47,15 +47,15 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 //     })
 // })();
 // 
-var triggerTabList = [].slice.call(document.querySelectorAll('#sidebar .nav-group > .nav-link'))
-triggerTabList.forEach(function (triggerEl) {
-  var tabTrigger = new Tab(triggerEl)
+// var triggerTabList = [].slice.call(document.querySelectorAll('#sidebar .nav-group > .nav-link'))
+// triggerTabList.forEach(function (triggerEl) {
+//   var tabTrigger = new Tab(triggerEl)
 
-  triggerEl.addEventListener('click', function (event) {
-    event.preventDefault()
-    tabTrigger.show()
-  })
-})
+//   triggerEl.addEventListener('click', function (event) {
+//     event.preventDefault()
+//     tabTrigger.show()
+//   })
+// })
 
 var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {

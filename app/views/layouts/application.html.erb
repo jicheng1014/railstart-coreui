@@ -6,12 +6,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= vite_client_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= vite_javascript_tag 'application' %>
-    <%= vite_stylesheet_tag 'application.scss' %>
+    <%= vite_stylesheet_tag 'application.scss' %>    
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-28 px-5 flex text-red-400">
+      Application
       <%= yield %>
     </main>
   </body>

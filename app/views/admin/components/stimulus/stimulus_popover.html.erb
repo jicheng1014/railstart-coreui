@@ -1,9 +1,23 @@
 <div class="card">
   <div class="card-header">
-    <a href="https://www.stimulus-components.com/docs/stimulus-animated-number">stimulus-animated-number</a>
+    <a href="https://www.stimulus-components.com/docs/stimulus-popover">stimulus-popover</a>
   </div>
   <div class="card-body">
-  
+    <!-- <div data-controller="popover">
+      This is my Github card available on
+      <a href="/profile" data-action="mouseover->popover#show mouseout->popover#hide"> Github </a>
+
+      <template data-popover-target="content">
+        <div data-popover-target="card">
+          <p>This content is in a hidden template.</p>
+        </div>
+      </template>      
+    </div> -->
+
+    <div data-controller="popover" data-popover-url-value="<%= popover_card_admin_components_path %>">
+      You can load popover with AJAX. For instance, this is my
+      <a href="/profile" data-action="mouseover->popover#show"> profile card </a>
+    </div>
   </div>
 </div>
 

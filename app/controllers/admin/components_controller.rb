@@ -253,5 +253,9 @@ module Admin
     def load_more
       render "admin/components/example/load_more", layout: false
     end
+
+    def popover_card
+      render partial: 'admin/components/example/popover_card'
+    end
   end
 end
